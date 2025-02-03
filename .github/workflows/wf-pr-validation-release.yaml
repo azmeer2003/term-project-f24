@@ -2,7 +2,7 @@ name: wf-pr-validation
 on:
   pull_request:
     branches:
-      - release
+      - release/v1.0
 jobs:
   lint-job-r:
     runs-on: ubuntu-latest

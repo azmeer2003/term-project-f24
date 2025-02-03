@@ -2,7 +2,7 @@ name: wf-deploy-release
 on:
   push:
     branches:
-      - release
+      - release/v1.0
 
 jobs:
   build-staging-job:
