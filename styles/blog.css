@@ -1,3 +1,4 @@
+/* General Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -29,8 +30,9 @@ nav ul li a {
     text-transform: uppercase;
 }
 
+/* Hero Section */
 .hero {
-    background: url('../assets/innovate.jpg') no-repeat center center/cover;
+    background: url('../assets/blog.jpg') no-repeat center center/cover;
     height: 60vh;
     display: flex;
     align-items: center;
@@ -55,12 +57,47 @@ nav ul li a {
     margin-top: 10px;
 }
 
-.introduction {
+/* Blog Section */
+.blog-posts {
     padding: 20px;
-    text-align: center;
     background: #fff;
 }
 
+.blog-post {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-post h3 {
+    font-size: 1.6rem;
+    color: #333;
+}
+
+.post-date {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.blog-post p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 15px;
+    background: #ff6600;
+    color: #fff;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
