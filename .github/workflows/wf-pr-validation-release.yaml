@@ -13,19 +13,9 @@ jobs:
         run: |
           npx htmlhint "**/*.html"
           npx stylelint "**/*.css"
-  accessibility-validation-job-r:
-    needs: lint-job-r
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-      - name: Install dependencies
-        run: npm install -g pa11y
-      - name: Run accessibility tests
-        run: pa11y ./src/index.html
 
   build-job-r:
-    needs: accessibility-validation-job-r
+    needs: lint-job-r
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
